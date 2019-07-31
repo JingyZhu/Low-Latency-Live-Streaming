@@ -268,6 +268,7 @@ int main(int argc, char *argv[])
     avctx->level = 20;
     avctx->qmin = 10;
     avctx->qmax = 30;
+    avctx->global_quality = 30;
 
     /* set hw_frames_ctx for encoder's AVCodecContext */
     if ((err = set_hwframe_ctx(avctx, hw_device_ctx)) < 0) {
