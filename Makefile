@@ -11,7 +11,7 @@ LDLIBS := $(shell pkg-config --libs $(LIVE_LIBS)) $(LDLIBS)
 
 ALL= 	vaapi_encode		\
 		vaapi_decode		\
-		sc_vaapi_encode			\
+		sc_vaapi_encode		\
 		capture_screen		\
 
 all: $(ALL)
